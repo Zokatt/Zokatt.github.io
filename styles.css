@@ -38,7 +38,9 @@ h1 em { color: #e85d3f; font-family: var(--serif); font-weight: 400; letter-spac
 .text-link { display: inline-flex; align-items: center; gap: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); font-size: .84rem; font-weight: 600; }
 .text-link span { color: #e85d3f; font-size: 1.1rem; }
 .visual-frame { position: relative; display: grid; place-items: center; width: 90%; margin: 0 auto; aspect-ratio: .84; overflow: hidden; border-radius: 18px; color: rgba(23,33,31,.62); font-size: .78rem; }
-.image-slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.visual-frame::before, .visual-frame::after { display: none; content: none; }
+.visual-frame > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.project-image > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .frame-index { position: absolute; right: 17px; bottom: 15px; font-size: .68rem; letter-spacing: .1em; }
 .visual-caption { margin: 14px 0 0; color: var(--muted); font-size: .7rem; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin: 150px 0 39px; border-bottom: 1px solid var(--line); }
