@@ -1,2 +1,2 @@
-# Zokatt.github.io
+# zokatt.github.io
 Website
