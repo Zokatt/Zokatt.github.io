@@ -35,7 +35,9 @@ h1, h2 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -.065em; }
 h1 { max-width: 750px; margin-bottom: 29px; font-size: clamp(3.8rem, 7.2vw, 7.2rem); line-height: .91; }
 h1 em { color: #e85d3f; font-family: var(--serif); font-weight: 400; letter-spacing: -.08em; }
 .hero-intro { max-width: 390px; margin-bottom: 31px; color: var(--muted); line-height: 1.65; }
-.hero-links { display: flex; flex-direction: column; align-items: flex-start; gap: 15px; }
+.hero-links { display: block; }
+.hero-links .text-link { display: flex; width: max-content; }
+.hero-links .text-link:first-child { margin-bottom: 15px; }
 .text-link { display: inline-flex; align-items: center; gap: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); font-size: .84rem; font-weight: 600; }
 .text-link span { color: #e85d3f; font-size: 1.1rem; }
 .visual-frame { position: relative; display: grid; place-items: center; width: 86%; margin: 0 auto; aspect-ratio: .84; overflow: hidden; border-radius: 18px; clip-path: inset(0 round 18px); color: rgba(23,33,31,.62); font-size: .78rem; }
